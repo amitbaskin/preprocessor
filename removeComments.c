@@ -33,10 +33,3 @@ void removeComments(FILE *readFilePtr, FILE *writeFilePtr){
         }
     }
 }
-
-void printFile(FILE *file){
-    int chr;
-    while ((chr = getc(file)) != EOF){
-        putchar(chr);
-    }
-}

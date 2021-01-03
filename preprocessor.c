@@ -21,16 +21,13 @@ int main(int argc, char **argv) {
     fileNameC = argv[1];
     len = processArg(argc, argv);
     result = openFile(fileNameC, &filenameCPtr, "r");
-    printf("\n%d\n", result);
     fileNameC1 = malloc(len + 2);
     appendToExtension(fileNameC, len, '1', fileNameC1);
     result = openFile(fileNameC1, &filenameC1Ptr, "w+");
-    printf("\n%d\n", result);
     removeComments(filenameCPtr, filenameC1Ptr);
     fileNameC2 = malloc(len + 2);
     appendToExtension(fileNameC, len, '2', fileNameC2);
     result = openFile(fileNameC2, &filenameC2Ptr, "w+");
-    printf("\n%d\n", result);
     rewind(filenameC1Ptr);
     includeFiles(&filenameC1Ptr, &filenameC2Ptr);
     return 0;
