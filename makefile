@@ -1,2 +1,2 @@
-preprocessor: filename.c preprocessor.c openFile.c  preUtils.c processArg.c filename.h openFile.h  preUtils.h processArg.h
-	gcc -Wall -ansi -pedantic -lm filename.c preprocessor.c openFile.c  preUtils.c processArg.c filename.h openFile.h  preUtils.h processArg.h
+preprocessor: copyFile.c copyFile.h includeFiles.c includeFiles.h openFile.c openFile.h preprocessor.c preUtils.c preUtils.h processArg.c processArg.h removeComments.c removeComments.h
+	gcc -Wall -ansi -pedantic -lm copyFile.c copyFile.h includeFiles.c includeFiles.h openFile.c openFile.h preprocessor.c preUtils.c preUtils.h processArg.c processArg.h removeComments.c removeComments.h

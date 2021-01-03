@@ -3,4 +3,4 @@ project(preprocessor C)
 
 set(CMAKE_C_STANDARD 90)
 
-add_executable(preprocessor preprocessor.c processArg.c processArg.h openFile.c openFile.h preUtils.c preUtils.h filename.c filename.h)
+add_executable(preprocessor preprocessor.c processArg.c processArg.h openFile.c openFile.h preUtils.c preUtils.h filename.c filename.h removeComments.c removeComments.h includeFiles.c includeFiles.h copyFile.c copyFile.h)
